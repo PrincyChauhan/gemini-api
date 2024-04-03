@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generative AI</title>
+</head>
+
+<body>
+    <form action="/generate" method="POST">
+        <label for="input">Input:</label><br>
+        <input type="text" id="input" name="input"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <% if (typeof responseText !== 'undefined') { %>
+        <h2>Generated Content:</h2>
+        <p>
+            <%= responseText %>
+        </p>
+        <% } %>
+</body>
+
+</html>
